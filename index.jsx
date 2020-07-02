@@ -1,4 +1,6 @@
-const eslintTest = () =>
+import React from 'react'
+
+const eslintTest = (props) =>
 {
   let neverReassigned
   neverReassigned = "initial value"
@@ -9,6 +11,12 @@ const eslintTest = () =>
 
   const pointlessArrayOperation = [4, 1, 3, 0].map((num) =>  num + 1).filter(num => num > 0).sort()
   console.info(pointlessArrayOperation, shouldBeLet)
+
+  return (
+    <main>
+    <h1>{shouldBeLet}</h1>
+    </main>
+  )
 }
 
 export default eslintTest
