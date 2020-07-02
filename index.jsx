@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-const eslintTest = ({ someProp }) =>
+const EslintTest = ({ someProp }) =>
 {
   const [state, setState] = useState()
   useEffect(() => {
@@ -24,4 +24,4 @@ const eslintTest = ({ someProp }) =>
   )
 }
 
-export default eslintTest
+export default EslintTest
