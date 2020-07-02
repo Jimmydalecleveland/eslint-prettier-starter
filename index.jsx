@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
-const eslintTest = (props) =>
+const eslintTest = ({ someProp }) =>
 {
+  const [state, setState] = useState()
+  useEffect(() => {
+    setState(someProp)
+  }, [])
   let neverReassigned
   neverReassigned = "initial value"
   console.log(shouldBeLet)
@@ -15,6 +19,7 @@ const eslintTest = (props) =>
   return (
     <main>
     <h1>{shouldBeLet}</h1>
+      <h2>{someProp}</h2>
     </main>
   )
 }
